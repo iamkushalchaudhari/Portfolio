@@ -72,6 +72,7 @@ img {
   display: block;
 }
 
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -342,6 +343,7 @@ img {
 
 .skills__img {
   border-radius: .5rem;
+  height: 245px;
 }
 
 /* ===== WORK =====*/
@@ -534,4 +536,108 @@ img {
   .home__img {
     width: 450px;
   }
+}
+
+.resumeSection{
+	width: 100%;
+	padding: 75px 8% 60px;
+  }
+.resumeSection .resumeTitle{
+	max-width: 700px;
+	margin: 0px auto 45px;
+	text-align: center;
+}
+.resumeSection .resumeTitle h1{
+	position: relative;
+	display: inline-block;
+	font-size: 32px;
+	color: #e2e2e2;
+	text-transform: uppercase;
+	
+}
+.resumeSection .resumeTitle h1::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 120%;
+	left: 0;
+	background-color: #adb5bd;
+}
+.resumeSection .resumeTitle h1::after{
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 3px;
+	top: calc(120% - 1px);
+	left: 0;
+	background-color: var(--first-color);
+}
+.resumeSection .resumeTitle p{
+	font-size: 17px;
+	color: #adb5bd;
+}
+.resumeSection .resumeContentsRow{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.resumeContentsRow .resumeEvenColumn{
+	background-color: #0e0e0e;
+	padding: 20px 15px;
+	border-radius: 10px;
+	border: 1px solid #151515;
+}
+.resumeContentsRow .resumeEvenColumn .subTitle{
+	font-size: 20px;
+	color:#e2e2e2;
+	padding: 0px 0px 20px 20px;
+	text-transform: uppercase;
+}
+.resumeEvenColumn .resumeContents .box{
+	position: relative;
+	padding: 0px 15px 25px 20px;
+	background-color: #0e0e0e;
+	border-left: 2px solid #6b7279;
+}
+.resumeEvenColumn .resumeContents .box:nth-child(3){
+	padding-bottom: 0px;
+}
+.resumeEvenColumn .resumeContents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	transform: translate(-50%, -10%);
+	background-color: var(--first-color);
+	border: 2px solid #0e0e0e;
+}
+.resumeEvenColumn .resumeContents .box h4{
+	position: relative;
+  color: var(--first-color);
+}
+.resumeEvenColumn .resumeContents .box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	color: #adb5bd;
+}
+.resumeEvenColumn .resumeContents .box p{
+	line-height: 1.2;
+	color: #6b7279;
+	font-size:17px;
+}
+
+
+@media(max-width: 768px){
+	.homeSection .homeBody{
+		background-position: center;
+		/*background-blend-mode: hard-light;*/
+	}
+	.resumeSection .resumeContentsRow{
+		grid-template-columns: 1fr;
+	}
+	
 }
