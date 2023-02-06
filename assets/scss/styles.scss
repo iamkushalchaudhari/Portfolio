@@ -305,6 +305,9 @@ img{
     &__css{
         width: 85%;
     }
+    &__java{
+        width: 35%;
+    }
     &__js{
         width: 45%;
     }
@@ -346,6 +349,7 @@ img{
         border: 1.5px solid var(--second-color);
         outline: none;
         margin-bottom: var(--mb-4);
+        color: #fff;
     }
     &__button{
         display: block;
