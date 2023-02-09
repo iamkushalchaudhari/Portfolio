@@ -263,17 +263,15 @@ img {
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
+  
 }
 
 .about__img {
-  align-items: center;
+  
   display: flex;
+  padding-left: 50px;
 }
 
-.about__img img {
-  width: 200px;
-  border-radius: .5rem;
-}
 
 .about__icon{
   font-size: 2rem;
@@ -352,6 +350,18 @@ img {
 
 .skills__ux {
   width: 75%;
+}
+
+.skills__react {
+  width: 65%;
+}
+
+.skills__tailwind {
+  width: 85%;
+}
+
+.skills__android {
+  width: 30%;
 }
 
 .skills__img {
@@ -524,9 +534,7 @@ img {
   .about__container {
     padding-top: 2rem;
   }
-  .about__img img {
-    width: 300px;
-  }
+  
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;

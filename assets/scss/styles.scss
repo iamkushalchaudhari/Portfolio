@@ -249,12 +249,7 @@ img{
     }
 
     &__img{
-        justify-self: center;
-        
-        & img{
-            width: 200px;
-            border-radius: .5rem;
-        }
+        padding-left: 50px;
     }
 }
 
@@ -314,9 +309,19 @@ img{
     &__ux{
         width: 75%;
     }
+    &__react{
+        width: 75%;
+    }
+    &__tailwind{
+        width: 75%;
+    }
+    &__android{
+        width: 30%;
+    }
     &__img{
         border-radius: .5rem;
     }
+    
 }
 /* ===== WORK =====*/
 .work{
@@ -411,10 +416,6 @@ img{
                 margin-right: var(--mb-4);
             }
         }
-        &__img{
-            width: 300px;
-            bottom: 25%;
-        }
     }
 
     .about__container{
@@ -500,11 +501,6 @@ img{
     .about{
         &__container{
            padding-top: 2rem;
-        }
-        &__img{
-            & img{
-                width: 300px;
-            }
         }
     }
     .skills__container{
