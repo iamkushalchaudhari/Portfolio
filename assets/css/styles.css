@@ -266,12 +266,25 @@ img {
 }
 
 .about__img {
-  justify-self: center;
+  align-items: center;
+  display: flex;
 }
 
 .about__img img {
   width: 200px;
   border-radius: .5rem;
+}
+
+.about__icon{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+}
+
+.about__text{
+  display: flex;
+  align-items: center;
 }
 
 /* ===== SKILLS =====*/
@@ -414,6 +427,7 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+  
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -618,11 +632,12 @@ img {
 .resumeEvenColumn .resumeContents .box h4{
 	position: relative;
   color: var(--first-color);
+  margin: 0%;
 }
 .resumeEvenColumn .resumeContents .box h3{
 	font-size: 19px;
-	padding: 10px 0px 6px;
 	color: #adb5bd;
+  margin-bottom:10px;
 }
 .resumeEvenColumn .resumeContents .box p{
 	line-height: 1.2;
