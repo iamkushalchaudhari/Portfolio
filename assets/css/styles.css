@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -36,7 +37,9 @@
 }
 
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -52,7 +55,9 @@ body {
   background-color: #000000;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -135,7 +140,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color:#000000;
+    background-color: #000000;
     transition: .5s;
   }
 }
@@ -263,24 +268,26 @@ img {
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
-  
+
 }
 
 .about__img {
-  
   display: flex;
-  padding-left: 50px;
 }
 
 
-.about__icon{
+.about__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
+
+.about__info {
+  display: flex;
+  padding-left: 50px;
 }
 
-.about__text{
+.about__text {
   display: flex;
   align-items: center;
 }
@@ -378,7 +385,7 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
   overflow: hidden;
-  }
+}
 
 .work__img img {
   transition: 1s;
@@ -413,7 +420,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color:#1e1d1d;
+  background-color: #1e1d1d;
   color: #ffffff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -437,7 +444,7 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
-  
+
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -445,8 +452,18 @@ img {
   .home {
     row-gap: 2rem;
   }
+
   .home__img {
     width: 200px;
+  }
+
+  .about__info {
+    padding-left: 50px;
+  }
+
+  .about__text {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -454,41 +471,58 @@ img {
   .home {
     padding: 4rem 0 2rem;
   }
+
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
+
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
   .home__img {
     width: 300px;
     bottom: 25%;
   }
+
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
   }
+
   .skills__container {
     grid-template-columns: .7fr;
     justify-content: center;
     column-gap: 1rem;
   }
+
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
+
   .contact__form {
     width: 360px;
     padding-top: 2rem;
   }
+
   .contact__container {
     justify-items: center;
+  }
+
+  .about__info {
+    padding-left: 50px;
+  }
+
+  .about__text {
+    align-items: center;
+    display: flex;
   }
 }
 
@@ -496,51 +530,72 @@ img {
   body {
     margin: 0;
   }
+
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
+
   .section-title {
     margin-bottom: var(--mb-6);
   }
+
   .section-title::after {
     width: 80px;
     top: 3rem;
   }
+
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     display: flex;
     padding-top: 0;
   }
+
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .nav__link {
     color: var(--second-color);
   }
+
   .home {
     padding: 8rem 0 2rem;
   }
+
   .home__img {
     width: 400px;
     bottom: 10%;
   }
+
   .about__container {
     padding-top: 2rem;
   }
-  
+
+  .about__info {
+    padding-left: 50px;
+  }
+
+  .about__text {
+    display: flex;
+    align-items: center;
+  }
+
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
     text-align: initial;
   }
+
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
@@ -552,115 +607,141 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home {
     padding: 10rem 0 2rem;
   }
+
   .home__img {
     width: 450px;
   }
+
+  .about__info {
+    padding-left: 50px;
+  }
+
+  .about__text {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.resumeSection{
-	width: 100%;
-	padding: 75px 8% 60px;
-  }
-.resumeSection .resumeTitle{
-	max-width: 700px;
-	margin: 0px auto 45px;
-	text-align: center;
+.resumeSection {
+  width: 100%;
+  padding: 75px 8% 60px;
 }
-.resumeSection .resumeTitle h1{
-	position: relative;
-	display: inline-block;
-	font-size: 32px;
-	color: #e2e2e2;
-	text-transform: uppercase;
-	
+
+.resumeSection .resumeTitle {
+  max-width: 700px;
+  margin: 0px auto 45px;
+  text-align: center;
 }
-.resumeSection .resumeTitle h1::before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	top: 120%;
-	left: 0;
-	background-color: #adb5bd;
+
+.resumeSection .resumeTitle h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  color: #e2e2e2;
+  text-transform: uppercase;
+
 }
-.resumeSection .resumeTitle h1::after{
-	content: '';
-	position: absolute;
-	width: 40%;
-	height: 3px;
-	top: calc(120% - 1px);
-	left: 0;
-	background-color: var(--first-color);
+
+.resumeSection .resumeTitle h1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 120%;
+  left: 0;
+  background-color: #adb5bd;
 }
-.resumeSection .resumeTitle p{
-	font-size: 17px;
-	color: #adb5bd;
+
+.resumeSection .resumeTitle h1::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  top: calc(120% - 1px);
+  left: 0;
+  background-color: var(--first-color);
 }
-.resumeSection .resumeContentsRow{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 20px;
+
+.resumeSection .resumeTitle p {
+  font-size: 17px;
+  color: #adb5bd;
 }
-.resumeContentsRow .resumeEvenColumn{
-	background-color: #0e0e0e;
-	padding: 20px 15px;
-	border-radius: 10px;
-	border: 1px solid #151515;
+
+.resumeSection .resumeContentsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
 }
-.resumeContentsRow .resumeEvenColumn .subTitle{
-	font-size: 20px;
-	color:#e2e2e2;
-	padding: 0px 0px 20px 20px;
-	text-transform: uppercase;
+
+.resumeContentsRow .resumeEvenColumn {
+  background-color: #0e0e0e;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 1px solid #151515;
 }
-.resumeEvenColumn .resumeContents .box{
-	position: relative;
-	padding: 0px 15px 25px 20px;
-	background-color: #0e0e0e;
-	border-left: 2px solid #6b7279;
+
+.resumeContentsRow .resumeEvenColumn .subTitle {
+  font-size: 20px;
+  color: #e2e2e2;
+  padding: 0px 0px 20px 20px;
+  text-transform: uppercase;
 }
-.resumeEvenColumn .resumeContents .box:nth-child(3){
-	padding-bottom: 0px;
+
+.resumeEvenColumn .resumeContents .box {
+  position: relative;
+  padding: 0px 15px 25px 20px;
+  background-color: #0e0e0e;
+  border-left: 2px solid #6b7279;
 }
-.resumeEvenColumn .resumeContents .box::before{
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	left: 0;
-	top: 0;
-	transform: translate(-50%, -10%);
-	background-color: var(--first-color);
-	border: 2px solid #0e0e0e;
+
+.resumeEvenColumn .resumeContents .box:nth-child(3) {
+  padding-bottom: 0px;
 }
-.resumeEvenColumn .resumeContents .box h4{
-	position: relative;
+
+.resumeEvenColumn .resumeContents .box::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -10%);
+  background-color: var(--first-color);
+  border: 2px solid #0e0e0e;
+}
+
+.resumeEvenColumn .resumeContents .box h4 {
+  position: relative;
   color: var(--first-color);
   margin: 0%;
 }
-.resumeEvenColumn .resumeContents .box h3{
-	font-size: 19px;
-	color: #adb5bd;
-  margin-bottom:10px;
+
+.resumeEvenColumn .resumeContents .box h3 {
+  font-size: 19px;
+  color: #adb5bd;
+  margin-bottom: 10px;
 }
-.resumeEvenColumn .resumeContents .box p{
-	line-height: 1.2;
-	color: #6b7279;
-	font-size:17px;
+
+.resumeEvenColumn .resumeContents .box p {
+  line-height: 1.2;
+  color: #6b7279;
+  font-size: 17px;
 }
 
 
-@media(max-width: 768px){
-	.homeSection .homeBody{
-		background-position: center;
-		/*background-blend-mode: hard-light;*/
-	}
-	.resumeSection .resumeContentsRow{
-		grid-template-columns: 1fr;
-	}
-	
+@media(max-width: 768px) {
+  .homeSection .homeBody {
+    background-position: center;
+    /*background-blend-mode: hard-light;*/
+  }
+
+  .resumeSection .resumeContentsRow {
+    grid-template-columns: 1fr;
+  }
+
 }
