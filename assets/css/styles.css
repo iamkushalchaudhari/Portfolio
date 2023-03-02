@@ -260,6 +260,62 @@ img {
   box-shadow: 0px 10px 36px rgba(255, 255, 255, 0.15);
 }
 
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -399,11 +455,6 @@ img {
   display: block;
 }
 
-.animation-div {
-  height: 100%;
-  width: 100%;
-   
-}
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -475,6 +526,10 @@ img {
     display: flex;
     align-items: center;
   }
+  .canvas3d {
+    display: block;
+  }
+  
 }
 
 @media screen and (min-width: 576px) {
@@ -534,6 +589,10 @@ img {
     align-items: center;
     display: flex;
   }
+  .canvas3d {
+    display: block;
+  }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -634,6 +693,10 @@ img {
     display: flex;
     align-items: center;
   }
+  .canvas3d {
+    display: block;
+  }
+  
 }
 
 .resumeSection {
@@ -752,6 +815,9 @@ img {
 
   .resumeSection .resumeContentsRow {
     grid-template-columns: 1fr;
+  }
+  .canvas3d {
+    display: block;
   }
 
 }
